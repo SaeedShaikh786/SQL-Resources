@@ -61,6 +61,14 @@ WHERE CITY NOT IN ("PUNE","Mumbai");
 ## LIMIT  ( it will give only 3 students data)
 SELECT * FROM student LIMIT 3;
 
+## CHECK CONSTRAINT
+
+CREATE Table EMP(
+    id INT PRIMARY KEY,
+    age TINYINT UNSIGNED,
+    CONSTRAINT age_ck CHECK (age >=10)
+);
+
 ## Order BY
 
 SELECT * FROM student     # we are getting top three student marks 
